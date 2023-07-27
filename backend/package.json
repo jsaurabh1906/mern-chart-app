@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.js", // Changed to "index.js"
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,14 @@
     "express": "^4.18.2",
     "json2csv": "^6.0.0-alpha.2",
     "mongoose": "latest"
+  },
+  "engines": {
+    "node": ">=14.20.1" // Specify the required Node.js version
+  },
+  "vercel": {
+    "functions": {
+      "api/**/*.js": {} // Specify the location of serverless functions
+    }
   }
 }
+
