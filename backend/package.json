@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js", // Changed to "index.js"
+  "main": "index.js", 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,11 +17,11 @@
     "mongoose": "latest"
   },
   "engines": {
-    "node": ">=14.20.1" // Specify the required Node.js version
+    "node": ">=14.20.1" 
   },
   "vercel": {
     "functions": {
-      "api/**/*.js": {} // Specify the location of serverless functions
+      "api/**/*.js": {} 
     }
   }
 }
